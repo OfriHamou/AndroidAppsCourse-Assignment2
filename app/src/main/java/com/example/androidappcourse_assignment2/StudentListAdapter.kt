@@ -22,6 +22,10 @@ class StudentListAdapter(private val studentList: List<StudentModel>): RecyclerV
             intent.putExtra("position", position)
             holder.itemView.context.startActivity(intent)
         }
+        holder.checkBoxView.setOnClickListener {
+            StudentListRepository.editStudent(student.copy(checked = holder.checkBoxView.isChecked), position)
+            notifyItemChanged(position)
+        }
 
     }
 

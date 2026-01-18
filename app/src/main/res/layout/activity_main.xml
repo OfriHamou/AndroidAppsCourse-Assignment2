@@ -5,7 +5,6 @@
     android:id="@+id/nameEditText"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
     tools:context=".MainActivity">
 
     <TextView
@@ -14,9 +13,7 @@
         android:layout_height="wrap_content"
         android:padding="16dp"
         android:text="Students List"
-        android:textColor="@android:color/black"
         android:textSize="28sp"
-        android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -37,7 +34,6 @@
         android:layout_height="0dp"
         android:padding="8dp"
         android:clipToPadding="false"
-        android:background="#EEEEEE"
         app:layout_constraintTop_toBottomOf="@id/textView"
         app:layout_constraintBottom_toTopOf="@id/floatingActionButton"
         app:layout_constraintStart_toStartOf="parent"

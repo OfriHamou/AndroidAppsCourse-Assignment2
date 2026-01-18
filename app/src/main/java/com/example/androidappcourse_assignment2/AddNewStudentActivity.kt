@@ -38,7 +38,7 @@ class AddNewStudentActivity : AppCompatActivity() {
         phoneText = findViewById(R.id.PhoneEditText)
         addressText = findViewById(R.id.AddEditText)
         checkedBox = findViewById(R.id.checkBox2)
-        saveButton = findViewById(R.id.editButton)
+        saveButton = findViewById(R.id.deleteButton)
         cancelButon = findViewById(R.id.backButton)
 
         saveButton?.setOnClickListener {
