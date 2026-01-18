@@ -17,6 +17,11 @@ class StudentListAdapter(private val studentList: List<StudentModel>): RecyclerV
         holder.nameStudentView.text = student.name
         holder.idStudentView.text = student.id
         holder.checkBoxView.isChecked = student.checked
+        holder.itemView.setOnClickListener {
+            val intent = Intent(holder.itemView.context, StudentDetailsActivity::class.java)
+            intent.putExtra("position", position)
+            holder.itemView.context.startActivity(intent)
+        }
 
     }
 

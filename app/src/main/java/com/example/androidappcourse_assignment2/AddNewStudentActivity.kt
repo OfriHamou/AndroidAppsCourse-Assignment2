@@ -38,8 +38,8 @@ class AddNewStudentActivity : AppCompatActivity() {
         phoneText = findViewById(R.id.PhoneEditText)
         addressText = findViewById(R.id.AddEditText)
         checkedBox = findViewById(R.id.checkBox2)
-        saveButton = findViewById(R.id.saveButton)
-        cancelButon = findViewById(R.id.cancelButton)
+        saveButton = findViewById(R.id.editButton)
+        cancelButon = findViewById(R.id.backButton)
 
         saveButton?.setOnClickListener {
             val name = nameText?.text.toString()
