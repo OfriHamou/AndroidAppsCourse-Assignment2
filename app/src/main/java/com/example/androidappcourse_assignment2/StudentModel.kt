@@ -1,6 +1,6 @@
 package com.example.androidappcourse_assignment2
 
-class StudentModel (
+data class StudentModel (
     val name: String,
     val id: String,
     val phone: String,

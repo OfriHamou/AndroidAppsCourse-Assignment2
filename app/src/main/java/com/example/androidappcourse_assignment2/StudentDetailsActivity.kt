@@ -1,5 +1,6 @@
 package com.example.androidappcourse_assignment2
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.CheckBox
@@ -31,7 +32,7 @@ class StudentDetailsActivity : AppCompatActivity() {
         var phoneText = findViewById<TextView>(R.id.phoneDetail)
         var addressText = findViewById<TextView>(R.id.addDetail)
         var checkedBox = findViewById<CheckBox>(R.id.checkBox2)
-        var editButton = findViewById<Button>(R.id.editButton)
+        var editButton = findViewById<Button>(R.id.deleteButton)
         var backButton = findViewById<Button>(R.id.backButton)
 
         //get the student from the intent (from the adapter)
@@ -45,15 +46,15 @@ class StudentDetailsActivity : AppCompatActivity() {
         addressText.text = student.address
         checkedBox.isChecked = student.checked
 
-        /*
+
         editButton.setOnClickListener {
-            val intent = Intent(this, EditStudentActivity::class.java)
+            val intent = Intent(this, editStudentActivity::class.java)
             intent.putExtra("position", studentIndex)
             startActivity(intent)
             finish()
         }
 
-         */
+
 
         backButton.setOnClickListener {
             finish()
